@@ -1,141 +1,335 @@
-# EXPERIMENT NO. 5 – ZENER DIODE AS VOLTAGE REGULATOR
+# EXPERIMENT NO: 5
 
-| **Name:** | | **Reg. No.:** | |
+| **Name: Sujith S K** | | **Reg. No.: 26013061** | |
 |---|---|---|---|
-| **Date:** | | **Batch / Section:** | |
+| **Date: 21-11-2026** | | **Batch / Section: 26ODJ150** | |
 
----
+# ZENER DIODE AS A VOLTAGE REGULATOR
 
 ## AIM
-
-To study the Zener diode as a voltage regulator and to obtain its line regulation and load regulation characteristics.
+To study the operation of a Zener diode as a voltage regulator and observe its line regulation and load regulation characteristics using Proteus simulation.
 
 ## APPARATUS REQUIRED
 
-| S. No. | Name of the apparatus | Range | Quantity |
-|:---:|:---:|:---:|:---:|
-| 1 | Zener diode | 1N4735A | 1 |
-| 2 | Resistors | 1 kΩ, 10 kΩ | 1 each |
-| 3 | Regulated power supply | (0–30) V DC | 1 |
-| 4 | Breadboard | — | 1 |
-| 5 | Digital ammeter | (0–200) mA | 1 |
-| 6 | Digital voltmeter | (0–20) V DC | 1 |
-| 7 | Decade resistance box (load RL) | — | 1 |
-| 8 | Connecting wires | — | As required |
+| S. No. | Name of the apparatus | Range / Specification | Quantity |
+|---:|---|---|---:|
+| 1 | Zener diode | 1N4740A | 1 |
+| 2 | Series resistor (R1) | 100 Ω | 1 |
+| 3 | Load resistor (R2) | 2 kΩ | 1 |
+| 4 | Variable resistor (RV1) | Variable resistance | 1 |
+| 5 | DC Battery | DC Voltage Source | 1 |
+| 6 | Ammeter | 0–1 A DC | 1 |
+| 7 | Voltmeter | 0–20 V DC | 1 |
+| 8 | Ground and connecting wires | — | As required |
 | 9 | Simulation software | Proteus Design Suite | 1 |
 
 ## THEORY
 
-A Zener diode is a heavily doped p-n junction diode, specially made to operate in the breakdown region. When reverse biased beyond a particular voltage, called the Zener breakdown voltage (Vz), it starts conducting heavily. Once it conducts, it maintains an almost constant voltage across its terminals whatever the current through it, i.e. it has a very low dynamic resistance. A series resistor Rs is connected to limit the current, since a high current can permanently damage the device.
+A Zener diode is a semiconductor diode designed to operate in the reverse breakdown region.
 
-In a Zener voltage regulator, the Zener diode is connected in reverse bias in parallel with the load, and the series resistor Rs is connected between the supply and the load. Any change in input voltage or load current changes the Zener current, while the output voltage across the load stays nearly constant at Vz.
+When connected in reverse bias, the Zener diode maintains an approximately constant voltage across its terminals, even when the input voltage or load current changes within its operating limits.
 
-**Line regulation:** the ability of the regulator to keep the output voltage constant when the input voltage varies, with the load kept constant.
+It is commonly used as a voltage regulator to maintain a stable output voltage.
 
-**Load regulation:** the ability of the regulator to keep the output voltage constant when the load resistance (load current) varies, with the input voltage kept constant.
+### 1. LINE REGULATION
+
+Line regulation is the ability of a voltage regulator to maintain a constant output voltage when the input voltage changes.
+
+In this experiment:
+- The load resistance is kept constant.
+- The input voltage is varied.
+- The output voltage is observed.
+
+### 2. LOAD REGULATION
+
+Load regulation is the ability of a voltage regulator to maintain a constant output voltage when the load resistance changes.
+
+In this experiment:
+- The input voltage is kept constant.
+- The load resistance is varied.
+- The output voltage is observed.
 
 ## PRECAUTIONS
 
-1. While doing the experiment, do not exceed the ratings of the Zener diode; this may damage the diode.
-2. Connect the voltmeter and ammeter in correct polarities as shown in the circuit diagram.
-3. Do not switch ON the power supply unless the circuit connections have been checked as per the circuit diagram.
+1.While doing the experiment, do not exceed the ratings of the Zener diode; this may damage the diode.
+2.Connect the voltmeter and ammeter in correct polarities as shown in the circuit diagram.
+3.Do not switch ON the power supply unless the circuit connections have been checked as per the circuit diagram.
 
 ## PROCEDURE
 
-### A. Line regulation
+### LINE REGULATION
 
-1. Connections are made as per the line regulation circuit diagram, with a fixed load resistance RL.
-2. Vary the regulated power supply (input) voltage Vin in steps.
-3. For each input voltage, note the output voltage Vo across the load and tabulate the readings.
-4. Plot a graph of input voltage Vin (x-axis) versus output voltage Vo (y-axis).
+1. Open Proteus and create the line regulation circuit.
+2. Connect the Zener diode in reverse bias.
+3. Connect the series resistor and load resistor.
+4. Set the load resistance to 2 kΩ.
+5. Apply an input voltage within the verified operating limits of the components.
+6. Vary the input voltage in suitable steps.
+7. Observe and record the output voltage.
+8. Plot the graph between input voltage and output voltage.
 
-### B. Load regulation
+### LOAD REGULATION
 
-1. Connections are made as per the load regulation circuit diagram.
-2. Set the input voltage Vin to a constant value above the Zener voltage.
-3. Note the no-load output voltage VNL with the load disconnected.
-4. Connect the load and vary the load resistance RL in steps; note the output voltage Vo for each value and tabulate the readings.
-5. Plot a graph of load resistance RL (x-axis) versus output voltage Vo (y-axis).
+1. Create the load regulation circuit in Proteus.
+2. Connect the Zener diode in reverse bias.
+3. Keep the input voltage constant.
+4. Vary the load resistance using the variable resistor.
+5. Observe and record the output voltage.
+6. Plot the graph between load resistance and output voltage.
 
-## CIRCUIT DIAGRAM
+## CIRCUIT DIAGRAMS
 
-### A. Line regulation
+### LINE REGULATION CIRCUIT
 
-*[ Insert the line regulation circuit diagram here ]*
+<img width="1130" height="720" alt="Line_Reg_Circuit" src="https://github.com/user-attachments/assets/6226cb77-cded-4633-af72-35590e86ec09" />
 
-**Figure 1:** Zener voltage regulator – line regulation
+### LOAD REGULATION CIRCUIT
 
-### B. Load regulation
-
-*[ Insert the load regulation circuit diagram here ]*
-
-**Figure 2:** Zener voltage regulator – load regulation
+<img width="1090" height="724" alt="Load_Reg_Circuit" src="https://github.com/user-attachments/assets/a4e451ac-5aef-4282-a17a-471cae04ef68" />
 
 ## SIMULATION USING PROTEUS
 
-Build the Zener regulator circuit in Proteus using the 1N4735A, the series resistor and the load. Vary the input voltage (line regulation) and the load resistance (load regulation), and paste screenshots showing the meter readings.
+### LINE REGULATION SIMULATION
 
-### A. Line regulation – simulation
+<img width="1097" height="721" alt="Line_Reg_1" src="https://github.com/user-attachments/assets/85581d2c-6fe4-4966-8874-eb351ef01804" />
 
-*[ Paste the Proteus line regulation simulation screenshot here ]*
 
-**Figure 3:** Proteus simulation – line regulation
 
-### B. Load regulation – simulation
+<img width="1111" height="708" alt="Line_Reg_2" src="https://github.com/user-attachments/assets/c413ca53-6d1d-4b68-8980-1b274342daba" />
 
-*[ Paste the Proteus load regulation simulation screenshot here ]*
+### LOAD REGULATION SIMULATION
 
-**Figure 4:** Proteus simulation – load regulation
+<img width="1091" height="727" alt="Load_Reg_1" src="https://github.com/user-attachments/assets/f55e4864-a9e0-4d86-9f29-5206bd91a0c4" />
+
+
+
+<img width="1103" height="698" alt="Load_Reg_2" src="https://github.com/user-attachments/assets/f63fbeb0-2883-4295-81bc-df2633ee15ea" />
 
 ## TABULATION
 
-### A. Line regulation (RL = ________ Ω, constant)
+### 1. LINE REGULATION (RL = 2000 Ω, constant)
 
-| S. No. | Input voltage Vin (V) | Output voltage Vo (V) |
-|:---:|:---:|:---:|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
-| 6 | | |
-| 7 | | |
-| 8 | | |
+| S.No | Input Voltage (V) | Output Voltage (V) |
+|---|---:|---:|
+| 1 | 30 | 10.10 |
+| 2 | 40 | 10.12 |
+| 3 | 50 | 10.14 |
+| 4 | 60 | 10.16 |
+| 5 | 70 | 10.18 |
+| 6 | 80 | 10.20 |
+| 7 | 90 | 10.22 |
+| 8 | 100 | 10.24 |
+| 9 | 110 | 10.26 |
+| 10 | 120 | 10.28 |
 
-### B. Load regulation (Vin = ________ V, constant; VNL = ________ V)
+### 2. LOAD REGULATION (Vin = 30 V, constant)
 
-| S. No. | Load resistance RL (Ω) | Output voltage Vo (V) |
-|:---:|:---:|:---:|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
-| 6 | | |
-| 7 | | |
-| 8 | | |
+| S.No | Load Resistance (Ω) | Output Voltage (V) |
+|---|---:|---:|
+| 1 | 100 | 9.80 |
+| 2 | 200 | 9.85 |
+| 3 | 300 | 9.89 |
+| 4 | 400 | 9.92 |
+| 5 | 500 | 9.95 |
+| 6 | 600 | 9.98 |
+| 7 | 700 | 10.00 |
+| 8 | 800 | 10.03 |
+| 9 | 900 | 10.05 |
+| 10 | 1000 | 10.08 |
 
 ## FORMULAE
 
-- **% Line regulation = (ΔVo / ΔVin) × 100**
-- **% Load regulation = (VNL − VFL) / VFL × 100**
-- **Series resistance Rs = (Vin − Vz) / (Iz + IL)**
+### LINE REGULATION
 
-ΔVo – change in output voltage; ΔVin – change in input voltage; VNL – no-load output voltage; VFL – full-load output voltage; Vz – Zener voltage; Iz – Zener current; IL – load current.
+% Line Regulation = Change in Output Voltage / Change in Input Voltage
 
-## MODEL GRAPH
+% Line regulation = (ΔVo / ΔVin) × 100
 
-### A. Line regulation (Vin vs Vo)
+### LOAD REGULATION
 
-*[ Paste / draw the line regulation graph here ]*
+% Load Regulation = (No-load Voltage - Full-load Voltage) / Full-load Voltage) × 100
 
-**Figure 5:** Line regulation characteristics
+% Load regulation = (VNL − VFL) / VFL × 100
 
-### B. Load regulation (RL vs Vo)
+## SERIES RESISTANCE
 
-*[ Paste / draw the load regulation graph here ]*
+Series resistance, Rs = (Vin − Vz) / (Iz + IL)
 
-**Figure 6:** Load regulation characteristics
+## MODEL GRAPHS
+
+### LINE REGULATION GRAPH (Vin vs Vo)
+
+<img width="1600" height="1000" alt="line_regulation_graph" src="https://github.com/user-attachments/assets/17dc8555-b812-4d98-ab91-bcde273c26d6" />
+
+### LOAD REGULATION GRAPH (RL vs Vo)
+
+<img width="1600" height="1000" alt="load_regulation_graph" src="https://github.com/user-attachments/assets/9d741239-4ea9-4bea-8c89-a9884d2f8995" />
+
+## RESULT
+
+Thus, the Zener diode was used as a voltage regulator, and its line regulation and load regulation characteristics were obtained.
+# EXPERIMENT NO: 5
+
+# ZENER DIODE AS A VOLTAGE REGULATOR
+
+## AIM
+To study the operation of a Zener diode as a voltage regulator and observe its line regulation and load regulation characteristics using Proteus simulation.
+
+## APPARATUS REQUIRED
+
+| S. No. | Name of the apparatus | Range / Specification | Quantity |
+|---:|---|---|---:|
+| 1 | Zener diode | 1N4740A | 1 |
+| 2 | Series resistor (R1) | 100 Ω | 1 |
+| 3 | Load resistor (R2) | 2 kΩ | 1 |
+| 4 | Variable resistor (RV1) | Variable resistance | 1 |
+| 5 | DC Battery | DC Voltage Source | 1 |
+| 6 | Ammeter | 0–1 A DC | 1 |
+| 7 | Voltmeter | 0–20 V DC | 1 |
+| 8 | Ground and connecting wires | — | As required |
+| 9 | Simulation software | Proteus Design Suite | 1 |
+
+## THEORY
+
+A Zener diode is a semiconductor diode designed to operate in the reverse breakdown region.
+
+When connected in reverse bias, the Zener diode maintains an approximately constant voltage across its terminals, even when the input voltage or load current changes within its operating limits.
+
+It is commonly used as a voltage regulator to maintain a stable output voltage.
+
+### 1. LINE REGULATION
+
+Line regulation is the ability of a voltage regulator to maintain a constant output voltage when the input voltage changes.
+
+In this experiment:
+- The load resistance is kept constant.
+- The input voltage is varied.
+- The output voltage is observed.
+
+### 2. LOAD REGULATION
+
+Load regulation is the ability of a voltage regulator to maintain a constant output voltage when the load resistance changes.
+
+In this experiment:
+- The input voltage is kept constant.
+- The load resistance is varied.
+- The output voltage is observed.
+
+## PRECAUTIONS
+
+1.While doing the experiment, do not exceed the ratings of the Zener diode; this may damage the diode.
+2.Connect the voltmeter and ammeter in correct polarities as shown in the circuit diagram.
+3.Do not switch ON the power supply unless the circuit connections have been checked as per the circuit diagram.
+
+## PROCEDURE
+
+### LINE REGULATION
+
+1. Open Proteus and create the line regulation circuit.
+2. Connect the Zener diode in reverse bias.
+3. Connect the series resistor and load resistor.
+4. Set the load resistance to 2 kΩ.
+5. Apply an input voltage within the verified operating limits of the components.
+6. Vary the input voltage in suitable steps.
+7. Observe and record the output voltage.
+8. Plot the graph between input voltage and output voltage.
+
+### LOAD REGULATION
+
+1. Create the load regulation circuit in Proteus.
+2. Connect the Zener diode in reverse bias.
+3. Keep the input voltage constant.
+4. Vary the load resistance using the variable resistor.
+5. Observe and record the output voltage.
+6. Plot the graph between load resistance and output voltage.
+
+## CIRCUIT DIAGRAMS
+
+### LINE REGULATION CIRCUIT
+
+<img width="1130" height="720" alt="Line_Reg_Circuit" src="https://github.com/user-attachments/assets/6226cb77-cded-4633-af72-35590e86ec09" />
+
+### LOAD REGULATION CIRCUIT
+
+<img width="1090" height="724" alt="Load_Reg_Circuit" src="https://github.com/user-attachments/assets/a4e451ac-5aef-4282-a17a-471cae04ef68" />
+
+## SIMULATION USING PROTEUS
+
+### LINE REGULATION SIMULATION
+
+<img width="1097" height="721" alt="Line_Reg_1" src="https://github.com/user-attachments/assets/85581d2c-6fe4-4966-8874-eb351ef01804" />
+
+
+
+<img width="1111" height="708" alt="Line_Reg_2" src="https://github.com/user-attachments/assets/c413ca53-6d1d-4b68-8980-1b274342daba" />
+
+### LOAD REGULATION SIMULATION
+
+<img width="1091" height="727" alt="Load_Reg_1" src="https://github.com/user-attachments/assets/f55e4864-a9e0-4d86-9f29-5206bd91a0c4" />
+
+
+
+<img width="1103" height="698" alt="Load_Reg_2" src="https://github.com/user-attachments/assets/f63fbeb0-2883-4295-81bc-df2633ee15ea" />
+
+## TABULATION
+
+### 1. LINE REGULATION (RL = 2000 Ω, constant)
+
+| S.No | Input Voltage (V) | Output Voltage (V) |
+|---|---:|---:|
+| 1 | 30 | 10.10 |
+| 2 | 40 | 10.12 |
+| 3 | 50 | 10.14 |
+| 4 | 60 | 10.16 |
+| 5 | 70 | 10.18 |
+| 6 | 80 | 10.20 |
+| 7 | 90 | 10.22 |
+| 8 | 100 | 10.24 |
+| 9 | 110 | 10.26 |
+| 10 | 120 | 10.28 |
+
+### 2. LOAD REGULATION (Vin = 30 V, constant)
+
+| S.No | Load Resistance (Ω) | Output Voltage (V) |
+|---|---:|---:|
+| 1 | 100 | 9.80 |
+| 2 | 200 | 9.85 |
+| 3 | 300 | 9.89 |
+| 4 | 400 | 9.92 |
+| 5 | 500 | 9.95 |
+| 6 | 600 | 9.98 |
+| 7 | 700 | 10.00 |
+| 8 | 800 | 10.03 |
+| 9 | 900 | 10.05 |
+| 10 | 1000 | 10.08 |
+
+## FORMULAE
+
+### LINE REGULATION
+
+% Line Regulation = Change in Output Voltage / Change in Input Voltage
+
+% Line regulation = (ΔVo / ΔVin) × 100
+
+### LOAD REGULATION
+
+% Load Regulation = (No-load Voltage - Full-load Voltage) / Full-load Voltage) × 100
+
+% Load regulation = (VNL − VFL) / VFL × 100
+
+## SERIES RESISTANCE
+
+Series resistance, Rs = (Vin − Vz) / (Iz + IL)
+
+## MODEL GRAPHS
+
+### LINE REGULATION GRAPH (Vin vs Vo)
+
+<img width="1600" height="1000" alt="line_regulation_graph" src="https://github.com/user-attachments/assets/17dc8555-b812-4d98-ab91-bcde273c26d6" />
+
+### LOAD REGULATION GRAPH (RL vs Vo)
+
+<img width="1600" height="1000" alt="load_regulation_graph" src="https://github.com/user-attachments/assets/9d741239-4ea9-4bea-8c89-a9884d2f8995" />
 
 ## RESULT
 
